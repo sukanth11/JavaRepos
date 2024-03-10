@@ -44,7 +44,7 @@ public class Client {
         for (Doctor doctor1:doctorsbysepcialityandexp){
             System.out.println(doctor);
         }
-
+        System.out.println("------------------");
 
     }
 }
