@@ -20,7 +20,7 @@ public class Client {
         doctorService.addDoctor(doctor);
 
         List<Doctor> doctors=doctorService.getAll();
-        for (Doctor doctor:doctors){
+        for (Doctor doctor1:doctors){
             System.out.println(doctor);
         }
         System.out.println("***********************");
@@ -30,7 +30,7 @@ public class Client {
         } catch (DoctorNotFoundException e) {
             throw new RuntimeException("Doctor by this speciality and fees not found");
         }
-        for (Doctor doctor:doctorsBySpecialityAndLessFee){
+        for (Doctor doctor1:doctorsBySpecialityAndLessFee){
             System.out.println(doctor);
         }
 
@@ -41,7 +41,7 @@ public class Client {
         } catch (DoctorNotFoundException e) {
             throw new RuntimeException("Doctor by this speciality and experience not found");
         }
-        for (Doctor doctor:doctorsbysepcialityandexp){
+        for (Doctor doctor1:doctorsbysepcialityandexp){
             System.out.println(doctor);
         }
 
