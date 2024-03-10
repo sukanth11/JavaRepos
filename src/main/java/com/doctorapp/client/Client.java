@@ -12,24 +12,12 @@ public class Client {
     public static void main(String[] args) {
         IDoctorService doctorService = new DoctorServiceImpl();
         Specializaton specialization = Specializaton.RADIO;
-//        String speciality  = specialization.getSpeciality();
-//        String special = Specializaton.RADIO.getSpeciality();
-//        Doctor doctor = new Doctor("sukanth", speciality,5000,9,15);
-//        Doctor doctor = new Doctor("kishor", speciality,1000,5,1);
-//        Doctor doctor = new Doctor("prajwal", speciality,6000,7,10);
-//        Doctor doctor = new Doctor("nikhil", speciality,5000,9,12);
-//        doctorService.addDoctor(doctor)
+        String speciality  = specialization.getSpeciality();
+        String special = Specializaton.RADIO.getSpeciality();
 
-//          Doctor doctor=new Doctor();
-//          doctorService.updateDoctor(3,2000);
+        Doctor doctor = new Doctor("prajwal", speciality,6000,7,10);
 
-//          doctorService.deleteDoctor(4);
-
-//        try {
-//            System.out.println(doctorService.getById(3));;
-//        } catch (IdNotFoundExcetion e) {
-//            e.printStackTrace();
-//        }
+        doctorService.addDoctor(doctor);
 
         List<Doctor> doctors=doctorService.getAll();
         for (Doctor doctor:doctors){
